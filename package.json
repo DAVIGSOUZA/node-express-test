@@ -1,0 +1,32 @@
+{
+  "name": "node-express-test",
+  "version": "1.0.0",
+  "description": "simple crud for learning purpose",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node build/index.js",
+    "dev": "ts-node-dev src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DAVIGSOUZA/node-express-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DAVIGSOUZA/node-express-test/issues"
+  },
+  "homepage": "https://github.com/DAVIGSOUZA/node-express-test#readme",
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.15.11",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
