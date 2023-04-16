@@ -4,7 +4,7 @@ CREATE TABLE products (
   id INTEGER UNIQUE NOT NULL PRIMARY KEY AUTOINCREMENT,
   name TEXT NOT NULL UNIQUE,
   price REAL NOT NULL,
-  description TEXT
+  description TEXT,
   image_url TEXT
 );
 

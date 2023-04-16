@@ -4,7 +4,7 @@ CREATE TABLE purchases (
   id INTEGER UNIQUE NOT NULL PRIMARY KEY AUTOINCREMENT,
   buyer_id INTEGER NOT NULL,
   total_price REAL,
-  paid BOOLEAN,
+  paid BOOLEAN DEFAULT(false) NOT NULL,
   created_at DATE DEFAULT(DATETIME()) NOT NULL,
   Foreign Key (buyer_id) REFERENCES users(id)
 );
@@ -17,10 +17,10 @@ CREATE TABLE purchases_products (
   Foreign Key (product_id) REFERENCES products(id)
 );
 
-INSERT INTO purchases (buyer_id, total_price, paid)
+INSERT INTO purchases (buyer_id, total_price)
 VALUES
-  (1, 29.90, false),
-  (1, 299, false);
+  (1, 29.90),
+  (1, 299);
 
 INSERT INTO purchases_products
 VALUES
